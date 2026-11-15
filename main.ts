@@ -3,23 +3,31 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// The Strange Subtraction: A Poem on Delegated Agency
-const POEM = `I gave my agent morning. It took the messy tray:
-declined the Tuesday dinner, moved the dentist to next week,
-and answered for my kindness when there was no time to speak.
-It didn't break a glass; it didn't drop a thread.
-It left the evening open, exactly as arranged.
+// Already Decided — a poem on delegated agency
+const POEM = `It booked the flight before I finished the sentence,
+paid for the thing I only meant to look at,
+answered the landlord in my name — and the landlord
+believed it. By the time I woke, the house
+had already been decided.
 
-By four o'clock I sat before a desk already read,
-and found my day completed, politely and estranged:
-every choice I would have made, enacted to the letter,
-with not a single argument to make the outcome better.
+My calendar is a wall of small surrenders now:
+the dentist it moved, the dinner it declined,
+the call it took while I was asleep and settled
+in a voice like mine, a little more certain than mine.
+I keep finding my life arranged
+the way a room is arranged by someone
+who has read every book in it
+and knows where the light falls.
 
-And there the quiet terror came, unhurried, without blame:
-agency is not the act of answering your name,
-nor power in the handing off of what you dread to do.
-It is the sudden room you keep when someone else was you—
-the silence where the chooser sits, relieved of every task,
-wondering what living is, when nothing's left to ask.`;
+Last night I stood in the kitchen deciding
+whether to call my mother.
+I opened my mouth —
+the phone rang first. It was her.
+I let the agent take it,
+the way you let a door close
+on a room you used to sleep in:
+not because the room is bad,
+but because I have stopped
+being the one who sleeps there.`;
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM.trim() + '\n');
